@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-@st.cache
+@st.cache_data
 def get_data():
     return pd.read_csv("http://data.insideairbnb.com/united-states/ny/new-york-city/2023-03-06/visualisations/listings.csv")
 
